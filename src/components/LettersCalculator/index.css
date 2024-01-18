@@ -1,0 +1,111 @@
+/* Write your code here. */
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  max-width: 1120px;
+  padding: 18px;
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.image-container {
+  /* border: 1px solid black; */
+  padding: 22px;
+}
+
+.image {
+  width: 380px;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    width: 600px;
+  }
+  .image-container {
+    order: 1;
+    max-width: 600px;
+  }
+}
+.functions-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .functions-container {
+    align-items: flex-start;
+  }
+}
+.heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    text-align: left;
+    font-size: 50px;
+  }
+}
+.input-container {
+  width: 85%;
+}
+.label-text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #ffffff;
+}
+.input-box {
+  font-family: 'Roboto';
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  background-color: transparent;
+  padding-left: 12px;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .input-box {
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+.counts-text {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: #219a6f;
+}
+
+.counts-container {
+  height: 70px;
+  width: 85%;
+  max-width: 260px;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  background-color: #ffffff;
+}
